@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Management System</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <h1>Content Management Application</h1>
+
+    <form id="contentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image">
+<br>
+        <label for="video">Video:</label>
+        <input type="file" id="video" name="video">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Submitted Content:</h2>
+    <div id="submittedContent"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
